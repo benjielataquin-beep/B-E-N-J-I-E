@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B E N J I E .com</title>
+  <link rel="icon" type="image/png" href="image/aa.png">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <a href="#home" class="logo">
+        <img src="image/aa.png" alt="Logo"> <span>B E N J I E</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#special">Special</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="container">
+    
+    <section class="slides slide1" id="home">
+      <div class="content">
+        <div class="text">
+          <h2>Welcome to B E N J I E.com</h2>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="slides slide2" id="about">
+      <div class="content">
+        <div class="image">
+          <img src="image/rr.jpg" alt="About Me">
+        </div>
+        <div class="text">
+          <h2>About Me</h2>
+          <p>Hello! My name is Benjie Lataquin, a proud student of BS Information Technology, 2-D, at West Visayas State University – Lambunao Campus. 
+            I live in Barangay Pajo, Lambunao, Iloilo, where I grew up and continue to pursue my studies with determination. As an IT student, I am passionate about learning technology, improving my skills, and exploring how computers and systems work to solve real-world problems. 
+            Being part of WVSU has given me the chance to grow not only academically but also personally. 
+            I strive to do my best in everything I do, with the goal of becoming successful in my chosen field and making my family proud.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="slides slide3" id="special">
+      
+      <div class="button-group">
+        <button onclick="showImage('family')">Family</button>
+        <button onclick="showImage('friends')">Friends</button>
+        <button onclick="showImage('organization')">Organization</button>
+      </div>
+
+      
+      <div class="image-display">
+        <img id="family" src="image/FAMILY.jpg" alt="Family">
+        <img id="friends" src="image/friends.jpg" alt="Friends">
+        <img id="organization" src="image/ORG.jpg" alt="Organization">
+      </div>
+    </section>
+  </div>
+
+  
+  <script>
+    function showImage(type) {
+      document.querySelectorAll('.image-display img').forEach(img => img.style.display = 'none');
+      document.getElementById(type).style.display = 'block';
+    }
+  </script>
+
+  
+  <footer>
+    <p>&copy; 2025 B E N J I E.com | All Rights Reserved</p>
+    <nav>
+      <ul>
+        <li><a href="https://facebook.com/benjielataquin" target="_blank">Facebook</a></li>
+        <li><a href="mailto:benjielataquin@gmail.com">Google</a></li>
+        <li><a href="https://www.instagram.com/hyeon_jaeui" target="_blank">Instagram</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
